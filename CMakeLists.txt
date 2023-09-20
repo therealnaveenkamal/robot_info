@@ -225,3 +225,6 @@ add_library(${PROJECT_NAME}_lib
 add_executable(robot_info_node src/robot_info_main.cpp src/robot_info_class.cpp)
 target_link_libraries(robot_info_node ${catkin_LIBRARIES} robot_info_lib )
 
+add_executable(agv_robot_info_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp)
+target_link_libraries(agv_robot_info_node ${catkin_LIBRARIES} robot_info_lib )
+
